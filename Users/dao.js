@@ -3,7 +3,7 @@ export const createUser = (user) => {
     // delete user._id;
     const newUser = {
         ...user,
-        _id: new Date().toString()
+        _id: Date.now()
     };
     return model.create(newUser);
 }
