@@ -3,6 +3,8 @@ export const createUser = (user) => {
     // delete user._id;
     const newUser = {
         ...user,
+        firstName: "",
+        lastName: "",
         _id: Date.now()
     };
     return model.create(newUser);
